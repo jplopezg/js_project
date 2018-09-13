@@ -1,3 +1,37 @@
-<div>
-    usuarios
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Usuarios</h2>
+
+<form>
+  Nombre:<br>
+  <input type="text" name="firstname" value="">
+  <br>
+  Apellido:<br>
+  <input type="text" name="lastname" value="">
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<br>
+<div class="continer">
+    <p></p>
 </div>
+<form id="form1">
+    Nombre:<br><input type="text" name="nombre" value="jose" id="nombre" class="formulario">
+
+    <p><input type="checkbox" name="acepto" id="acepto" class="formulario_check"> Acepto el contrato</p>
+
+    <p>Deacuerdo: Si<input type="radio" name="deacuerdo" value="si"> No<input type="radio" name="deacuerdo" value="no"></p>
+
+    <p>
+    <select name="seleccion" id="seleccion" class="formulario_select">
+        <option value="1">primera</option>
+        <option value="2">segunda</option>
+    </select>
+    </p>
+</form>
+<input type="button" value="obtener el nombre" onclick="capturar()">
+<div id="resultado"></div>
+</body>
+</html>
