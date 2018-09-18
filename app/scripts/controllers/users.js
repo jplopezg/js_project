@@ -4,7 +4,21 @@
  */
 
 function usersActionsController() {
-    //tu código aquí.
+    var submit = document.getElementById("submit").onclick =
+        function () {
+            var firstname = document.getElementById("firstname").value;
+            console.log(firstname);
+            var lastname = document.getElementById("lastname").value;
+            console.log(lastname);
+            var email = document.getElementById("email").value;
+            console.log(email);
+            var profession = document.getElementById("profession").value;
+            console.log(profession);
+        };
+
+
+
+   /* //tu código aquí.
        // obtenemos e valor por el numero de elemento
        var porElementos=document.forms["form1"].elements[0].value;
        // Obtenemos el valor por el id
@@ -21,5 +35,5 @@ function usersActionsController() {
            <br>Por ID: "+porId+" \
            <br>Por Nombre: "+porNombre+" \
            <br>Por TagName: "+porTagName+" \
-           <br>Por ClassName: "+porClassName;
+           <br>Por ClassName: "+porClassName;*/
 }
